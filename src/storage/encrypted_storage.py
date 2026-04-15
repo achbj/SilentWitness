@@ -178,6 +178,12 @@ class EncryptedStorage:
         random_bytes = os.urandom(8).hex()
         return hashlib.sha256(f"{timestamp}:{random_bytes}".encode()).hexdigest()[:16]
 
+    def _get_connection(self):
+        """
+        Get database connection.
+        """
+        return sqlite3.connect(self.db_path)
+
     def _generate_tamper_proof_hash(self, record: EvidenceRecord) -> str:
         """
         Generate hash for tamper-proof verification.

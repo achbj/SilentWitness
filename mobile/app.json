@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "SilentWitness",
+    "slug": "silentwitness",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#212121"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.silentwitness.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#212121"
+      },
+      "package": "com.silentwitness.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow SilentWitness to access your microphone for evidence recording."
+        }
+      ]
+    ],
+    "extra": {
+      "description": "On-device AI that documents abuse without internet",
+      "privacy": "offline-first",
+      "hackathon": "Gemma 4 Good Hackathon - Safety & Trust Track"
+    }
+  }
+}
