@@ -1,0 +1,29 @@
+# SilentWitness Dependencies
+# Core AI and ML
+torch>=2.0.0
+transformers>=4.30.0
+onnx>=1.14.0
+onnxruntime>=1.15.0
+
+# Encryption and Security
+cryptography>=41.0.0
+
+# Voice Processing (optional)
+# openai-whisper>=20230314  # Uncomment for Whisper support
+
+# API Integration
+requests>=2.31.0
+
+# Database
+# sqlcipher3>=0.5.0  # Uncomment for SQLCipher (requires compilation)
+
+# Mobile Deployment (for React Native bridge)
+# react-native-pytorch>=0.1.0  # Experimental
+
+# Development
+pytest>=7.4.0
+black>=23.0.0
+mypy>=1.5.0
+
+# Optional: Ollama Python SDK
+# ollama>=0.1.0
